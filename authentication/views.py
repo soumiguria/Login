@@ -20,7 +20,7 @@ def signup(request):
 
         myuser = User.objects.create_user(username, email, pass1)
 
-        
+        myuser.save();
 
         messages.success(request, "Your account has been successfully created.")
 
